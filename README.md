@@ -2,6 +2,26 @@
 Nowoczesny system wyznaczania tras dla pojazdów wojskowych i żołnierzy w terenie
 
 Produkt 1: Kod źródłowy
+Wprowadzenie
+
+Kod źródłowy systemu MILNAV jest kluczowym elementem projektu, zapewniającym działanie wszystkich modułów, w tym planowania tras, analizy danych oraz komunikacji. Jego rozwój, jakość oraz zabezpieczenie są priorytetowe dla realizacji celów projektu. Kod musi być napisany w sposób skalowalny, bezpieczny i zgodny z najlepszymi praktykami inżynierii oprogramowania.
+
+Charakterystyka produktu
+
+Charakter: Systemowy komponent bazowy umożliwiający działanie aplikacji MILNAV.
+Cel: Realizacja funkcji planowania, monitorowania i analiz tras oraz komunikacji użytkowników w czasie rzeczywistym.
+Funkcje: Obsługa algorytmów tras, przetwarzanie danych, interfejsy API.
+Wygląd: Kod źródłowy zapisany i przechowywany w repozytorium Git.
+
+Użytkownicy:
+- Zespół deweloperski
+- Testerzy oprogramowania
+- Administratorzy systemu
+
+Źródła informacji o funkcjonowaniu:
+- Specyfikacja wymagań systemowych
+- Dokumentacja techniczna MILNAV
+- Raporty z testów i audytów bezpieczeństwa
 
 R1: Zagrożenie – Nieuczciwy klient wykorzysta system, aby zatankować inny podmiot bez autoryzacji.
 
@@ -37,7 +57,6 @@ WB5: Wprowadzenie testów penetracyjnych każdej nowej wersji kodu przed jej wdr
 
 Produkt 2 - Dokumentacja techniczna
 Wprowadzenie
-
 Dokumentacja techniczna projektu MILNAV zapewnia szczegółowe informacje dotyczące architektury systemu, sposobu działania modułów oraz wymagań funkcjonalnych i niefunkcjonalnych. Jest kluczowym narzędziem dla zespołów deweloperskich, testerów oraz administratorów.
 
 Charakterystyka produktu:
@@ -59,6 +78,25 @@ Użytkownicy:
 - Opinie użytkowników końcowych
 
 ---
+Prodkukt 3 - Fizyczne komponenty systemu
+Wprowadzenie
+Fizyczne komponenty systemu MILNAV obejmują urządzenia mobilne, stacje robocze oraz serwery odpowiedzialne za przetwarzanie danych i komunikację w czasie rzeczywistym. Ich niezawodność i wydajność są kluczowe dla zapewnienia ciągłości działania systemu w trudnych warunkach.
+
+Charakterystyka produktu:
+Charakter: Elementy sprzętowe wspierające funkcjonowanie systemu MILNAV.
+Cel: Zapewnienie infrastruktury dla przetwarzania danych, komunikacji i obsługi użytkowników.
+Funkcje: Przechowywanie danych, przetwarzanie w czasie rzeczywistym, komunikacja sieciowa.
+Wygląd: Urządzenia mobilne, serwery w obudowach rackowych, stacje robocze z monitorami dotykowymi.
+
+Użytkownicy:
+- Żołnierze w terenie
+- Operatorzy systemu w centrach dowodzenia
+- Administratorzy infrastruktury IT
+
+Źródła informacji o funkcjonowaniu:
+- Dokumentacja techniczna MILNAV
+- Raporty producentów sprzętu
+- Instrukcje użytkowania
 
 R4: Zagrożenie – Dokumentacja zostanie wykorzystana przez osoby niepowołane do ataku na system.
 
