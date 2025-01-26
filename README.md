@@ -1,7 +1,28 @@
 # MILNAV-projekt-amw
-Nowoczesny system wyznaczania tras dla pojazdów wojskowych i żołnierzy w terenie
+
+Opis projektu: Nowoczesny system wyznaczania tras dla pojazdów wojskowych i żołnierzy w terenie
 
 Produkt 1: Kod źródłowy
+Wprowadzenie
+
+Kod źródłowy systemu MILNAV jest kluczowym elementem projektu, zapewniającym działanie wszystkich modułów, w tym planowania tras, analizy danych oraz komunikacji. Jego rozwój, jakość oraz zabezpieczenie są priorytetowe dla realizacji celów projektu. Kod musi być napisany w sposób skalowalny, bezpieczny i zgodny z najlepszymi praktykami inżynierii oprogramowania.
+
+Charakterystyka produktu
+
+Charakter: Systemowy komponent bazowy umożliwiający działanie aplikacji MILNAV.
+Cel: Realizacja funkcji planowania, monitorowania i analiz tras oraz komunikacji użytkowników w czasie rzeczywistym.
+Funkcje: Obsługa algorytmów tras, przetwarzanie danych, interfejsy API.
+Wygląd: Kod źródłowy zapisany i przechowywany w repozytorium Git.
+
+Użytkownicy:
+- Zespół deweloperski
+- Testerzy oprogramowania
+- Administratorzy systemu
+
+Źródła informacji o funkcjonowaniu:
+- Specyfikacja wymagań systemowych
+- Dokumentacja techniczna MILNAV
+- Raporty z testów i audytów bezpieczeństwa
 
 R1: Zagrożenie – Nieuczciwy klient wykorzysta system, aby zatankować inny podmiot bez autoryzacji.
 
@@ -37,7 +58,6 @@ WB5: Wprowadzenie testów penetracyjnych każdej nowej wersji kodu przed jej wdr
 
 Produkt 2 - Dokumentacja techniczna
 Wprowadzenie
-
 Dokumentacja techniczna projektu MILNAV zapewnia szczegółowe informacje dotyczące architektury systemu, sposobu działania modułów oraz wymagań funkcjonalnych i niefunkcjonalnych. Jest kluczowym narzędziem dla zespołów deweloperskich, testerów oraz administratorów.
 
 Charakterystyka produktu:
@@ -63,14 +83,16 @@ Użytkownicy:
 R4: Zagrożenie – Dokumentacja zostanie wykorzystana przez osoby niepowołane do ataku na system.
 
 Wymagania funkcjonalne (WF)
+
 WF1: Dokumentacja musi obejmować szczegółowy opis wszystkich modułów systemu, w tym:
-Planowania tras.
+- Planowania tras.
 - Analizy i raportowania.
 - Komunikacji tekstowej i głosowej.
 WF2: Musi zawierać przykłady użycia API, w tym zapytania i odpowiedzi w formacie JSON.
 WF3: Dokumentacja powinna zawierać przewodnik instalacji systemu, konfiguracji serwerów oraz klientów.
 WF4: Powinna być dostępna w wersji online oraz w formacie PDF.
 WF5: Każda aktualizacja systemu musi być odzwierciedlona w dokumentacji w czasie nie dłuższym niż 24 godziny.
+
 R5: Zagrożenie – Niedostępność dokumentacji podczas awarii serwera.
 
 Wymagania wydajnościowe (WW)
@@ -86,4 +108,49 @@ WB3: Kopie zapasowe dokumentacji muszą być przechowywane w co najmniej dwóch 
 WB4: Dokumentacja PDF musi być zabezpieczona hasłem przed nieautoryzowanym otwarciem i edycją.
 
 ---
+
+Prodkukt 3 - Fizyczne komponenty systemu
+Wprowadzenie
+Fizyczne komponenty systemu MILNAV obejmują urządzenia mobilne, stacje robocze oraz serwery odpowiedzialne za przetwarzanie danych i komunikację w czasie rzeczywistym. Ich niezawodność i wydajność są kluczowe dla zapewnienia ciągłości działania systemu w trudnych warunkach.
+
+Charakterystyka produktu:
+Charakter: Elementy sprzętowe wspierające funkcjonowanie systemu MILNAV.
+Cel: Zapewnienie infrastruktury dla przetwarzania danych, komunikacji i obsługi użytkowników.
+Funkcje: Przechowywanie danych, przetwarzanie w czasie rzeczywistym, komunikacja sieciowa.
+Wygląd: Urządzenia mobilne, serwery w obudowach rackowych, stacje robocze z monitorami dotykowymi.
+
+Użytkownicy:
+- Żołnierze w terenie
+- Operatorzy systemu w centrach dowodzenia
+- Administratorzy infrastruktury IT
+
+Źródła informacji o funkcjonowaniu:
+- Dokumentacja techniczna MILNAV
+- Raporty producentów sprzętu
+- Instrukcje użytkowania
+
+---
+
+R7: Zagrożenie – Utrata urządzenia mobilnego z wrażliwymi danymi.
+
+Wymagania funkcjonalne (WF)
+WF1: Urządzenia mobilne muszą umożliwiać obsługę map offline oraz nawigację w czasie rzeczywistym.
+WF2: Serwery muszą obsługiwać wszystkie zapytania od urządzeń klienckich w czasie rzeczywistym.
+WF3: Urządzenia muszą posiadać dedykowany przycisk do awaryjnego usunięcia danych w sytuacjach kryzysowych.
+WF4: Wszystkie fizyczne komponenty muszą być kompatybilne z protokołami komunikacyjnymi używanymi w MILNAV.
+
+R8: Zagrożenie – Awaria serwera spowoduje brak dostępności systemu.
+
+Wymagania wydajnościowe (WW)
+WW1: Urządzenia mobilne muszą zapewniać czas pracy na baterii wynoszący co najmniej 8 godzin przy pełnym obciążeniu.
+WW2: Serwery muszą obsługiwać jednocześnie co najmniej 1000 połączeń bez zauważalnego spadku wydajności.
+WW3: Czas reakcji serwera na zapytania nie może przekraczać 200 ms.
+
+R9: Zagrożenie – Fizyczne komponenty zostaną przejęte przez osoby niepowołane.
+
+Wymagania bezpieczeństwa (WB)
+WB1: Urządzenia mobilne i serwery muszą obsługiwać szyfrowanie komunikacji z użyciem TLS 1.3.
+WB2: Stacje robocze i serwery muszą być wyposażone w systemy UPS, zapewniające działanie w przypadku awarii zasilania.
+WB3: Fizyczne komponenty muszą być regularnie poddawane testom penetracyjnym oraz audytom bezpieczeństwa.
+WB4: Każde urządzenie musi posiadać unikalny certyfikat uwierzytelnienia w systemie.
 
