@@ -1,7 +1,7 @@
 # MILNAV-projekt-amw
 Nowoczesny system wyznaczania tras dla pojazdów wojskowych i żołnierzy w terenie
 
-Produkt 1: Kod źródłowy
+Produkt 1 -  Kod źródłowy
 
 R1: Zagrożenie – Nieuczciwy klient wykorzysta system, aby zatankować inny podmiot bez autoryzacji.
 
@@ -61,6 +61,36 @@ WB1: Dostęp do dokumentacji online musi być chroniony przez system autoryzacji
 WB2: Dokumentacja zawierająca szczegółowe dane techniczne powinna być dostępna wyłącznie dla uprawnionych użytkowników.
 WB3: Kopie zapasowe dokumentacji muszą być przechowywane w co najmniej dwóch lokalizacjach.
 WB4: Dokumentacja PDF musi być zabezpieczona hasłem przed nieautoryzowanym otwarciem i edycją.
+
+---
+
+Produkt 3 - Fizyczne komponenty systemu
+
+Wprowadzenie
+Fizyczne komponenty systemu MILNAV obejmują urządzenia mobilne, stacje robocze oraz serwery odpowiedzialne za przetwarzanie danych i komunikację w czasie rzeczywistym. Ich niezawodność i wydajność są kluczowe dla zapewnienia ciągłości działania systemu w trudnych warunkach.
+
+R7: Zagrożenie – Utrata urządzenia mobilnego z wrażliwymi danymi.
+
+Wymagania funkcjonalne (WF)
+WF1: Urządzenia mobilne muszą umożliwiać obsługę map offline oraz nawigację w czasie rzeczywistym.
+WF2: Serwery muszą obsługiwać wszystkie zapytania od urządzeń klienckich w czasie rzeczywistym.
+WF3: Urządzenia muszą posiadać dedykowany przycisk do awaryjnego usunięcia danych w sytuacjach kryzysowych.
+WF4: Wszystkie fizyczne komponenty muszą być kompatybilne z protokołami komunikacyjnymi używanymi w MILNAV.
+
+R8: Zagrożenie – Awaria serwera spowoduje brak dostępności systemu.
+
+Wymagania wydajnościowe (WW)
+WW1: Urządzenia mobilne muszą zapewniać czas pracy na baterii wynoszący co najmniej 8 godzin przy pełnym obciążeniu.
+WW2: Serwery muszą obsługiwać jednocześnie co najmniej 1000 połączeń bez zauważalnego spadku wydajności.
+WW3: Czas reakcji serwera na zapytania nie może przekraczać 200 ms.
+
+R9: Zagrożenie – Fizyczne komponenty zostaną przejęte przez osoby niepowołane.
+
+Wymagania bezpieczeństwa (WB)
+WB1: Urządzenia mobilne i serwery muszą obsługiwać szyfrowanie komunikacji z użyciem TLS 1.3.
+WB2: Stacje robocze i serwery muszą być wyposażone w systemy UPS, zapewniające działanie w przypadku awarii zasilania.
+WB3: Fizyczne komponenty muszą być regularnie poddawane testom penetracyjnym oraz audytom bezpieczeństwa.
+WB4: Każde urządzenie musi posiadać unikalny certyfikat uwierzytelnienia w systemie.
 
 ---
 
