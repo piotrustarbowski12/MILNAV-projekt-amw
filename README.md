@@ -32,3 +32,35 @@ WB2: Implementacja mechanizmów ochrony przed atakami typu SQL Injection, XSS or
 WB3: System musi umożliwiać szyfrowanie kodu źródłowego przed publikacją na serwerach zewnętrznych.
 WB4: Każda zmiana w kodzie musi być śledzona w systemie kontroli wersji, a commitów dokonywać mogą wyłącznie uprawnieni deweloperzy.
 WB5: Wprowadzenie testów penetracyjnych każdej nowej wersji kodu przed jej wdrożeniem do produkcji.
+
+---
+
+Produkt 2 - Dokumentacja techniczna
+
+R4: Zagrożenie – Dokumentacja zostanie wykorzystana przez osoby niepowołane do ataku na system.
+
+Wymagania funkcjonalne (WF)
+WF1: Dokumentacja musi obejmować szczegółowy opis wszystkich modułów systemu, w tym:
+Planowania tras.
+- Analizy i raportowania.
+- Komunikacji tekstowej i głosowej.
+WF2: Musi zawierać przykłady użycia API, w tym zapytania i odpowiedzi w formacie JSON.
+WF3: Dokumentacja powinna zawierać przewodnik instalacji systemu, konfiguracji serwerów oraz klientów.
+WF4: Powinna być dostępna w wersji online oraz w formacie PDF.
+WF5: Każda aktualizacja systemu musi być odzwierciedlona w dokumentacji w czasie nie dłuższym niż 24 godziny.
+R5: Zagrożenie – Niedostępność dokumentacji podczas awarii serwera.
+
+Wymagania wydajnościowe (WW)
+WW1: Dokumentacja online musi być dostępna 24/7 z czasem ładowania poniżej 2 sekund na łączach o przepustowości 10 Mbps.
+WW2: Wersja PDF nie może przekraczać rozmiaru 50 MB, zachowując pełną czytelność i grafikę.
+WW3: Wyszukiwanie w dokumentacji online musi zwracać wyniki w czasie poniżej 1 sekundy.
+R6: Zagrożenie – Nieautoryzowany dostęp do dokumentacji zawierającej wrażliwe dane.
+
+Wymagania bezpieczeństwa (WB)
+WB1: Dostęp do dokumentacji online musi być chroniony przez system autoryzacji z wykorzystaniem 2FA.
+WB2: Dokumentacja zawierająca szczegółowe dane techniczne powinna być dostępna wyłącznie dla uprawnionych użytkowników.
+WB3: Kopie zapasowe dokumentacji muszą być przechowywane w co najmniej dwóch lokalizacjach.
+WB4: Dokumentacja PDF musi być zabezpieczona hasłem przed nieautoryzowanym otwarciem i edycją.
+
+---
+
