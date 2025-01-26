@@ -36,6 +36,29 @@ WB5: Wprowadzenie testów penetracyjnych każdej nowej wersji kodu przed jej wdr
 ---
 
 Produkt 2 - Dokumentacja techniczna
+Wprowadzenie
+
+Dokumentacja techniczna projektu MILNAV zapewnia szczegółowe informacje dotyczące architektury systemu, sposobu działania modułów oraz wymagań funkcjonalnych i niefunkcjonalnych. Jest kluczowym narzędziem dla zespołów deweloperskich, testerów oraz administratorów.
+
+Charakterystyka produktu:
+
+Charakter: Zbiór informacji opisujących szczegóły techniczne systemu.
+Cel: Ułatwienie zrozumienia działania systemu oraz jego rozwoju i utrzymania.
+Funkcje: Dokumentowanie architektury, API, procesów instalacji i konfiguracji.
+Wygląd: Pliki tekstowe i graficzne w formatach online (HTML) oraz PDF.
+
+Użytkownicy:
+- Programiści
+- Testerzy
+- Administratorzy systemu
+- Menedżerowie projektu
+
+Źródła informacji o funkcjonowaniu
+- Specyfikacja techniczna MILNAV
+- Raporty z testów i wdrożeń
+- Opinie użytkowników końcowych
+
+---
 
 R4: Zagrożenie – Dokumentacja zostanie wykorzystana przez osoby niepowołane do ataku na system.
 
